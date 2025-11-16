@@ -107,7 +107,7 @@ Replace the placeholder values with your actual credentials.
 
 **Running the Project**
 
-Run the Following command in the server folder:
+Run the Following command in the server folder (`Side Note`: Run this command in the Git Bash):
 
 ```bash
 chmod +x ./src/cli/main.js
