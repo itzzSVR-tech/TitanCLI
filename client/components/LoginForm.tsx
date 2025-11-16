@@ -55,7 +55,7 @@ export function LoginForm() {
                                     callbackURL:"http://localhost:3000"
                                 })}
                             >
-                                <GithubIcon className="size-4"/>
+                                <Image src={"/github.svg"} alt="Github" height={16} width={16} className="size-4 dark:invert" />
                                 Continue With GitHub
                             </Button>
                         </div>

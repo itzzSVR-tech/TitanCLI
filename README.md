@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="./TitanCLI.png" alt="Project Banner">
+      <img src="./Titan CLI Intro.png" alt="Project Banner">
   <br />
 
   <h2 align="center">Titan CLI</h2>
@@ -12,6 +12,7 @@
     <img src="https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white" alt="Gemini" />
     <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres" />
   </div>
+
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
@@ -75,7 +76,7 @@ cd TitanCLI
 
 **Installation**
 
-Install the project dependencies using npm:
+Install the project dependencies using npm in both the client and server folders:
 
 ```bash
 npm install
@@ -83,10 +84,9 @@ npm install
 
 **Set Up Environment Variables**
 
-Create a new file named `.env` in the client and server folders of your project and add the following content:
+Create a new file named `.env` in the server folder of your project and add the following content:
 
 ```env
-# Server
 PORT=<your port number>
 DATABASE_URL=<your database URL>
 
@@ -97,14 +97,39 @@ BETTER_AUTH_URL=http://localhost:3005
 # Github OAuth
 GITHUB_CLIENT_ID=<your client ID>
 GITHUB_CLIENT_SECRET=<your client secret>
+
+# Google Gemini
+GOOGLE_GENERATIVE_AI_API_KEY=<your API key>
+TITANAI_MODEL=<your prefered model>
 ```
 
 Replace the placeholder values with your actual credentials.
 
 **Running the Project**
 
+Run the Following command in the server folder:
+
+```bash
+chmod +x ./src/cli/main.js
+```
+Then in the client folder:
+
 ```bash
 npm run dev
 ```
 
 Open `http://localhost:{PORT}` in your browser to view the project.
+
+Also in the server folder:
+
+```bash
+npm run dev
+```
+
+Then run
+
+```bash
+<your_command> login
+```
+
+This will open a browser window to authenticate you with GitHub.
