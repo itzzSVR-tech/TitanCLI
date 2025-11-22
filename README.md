@@ -70,7 +70,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone git@github.com:itzzSVR-tech/TitanCLI.git
+git clone https://github.com/itzzSVR-tech/TitanCLI.git
 cd TitanCLI
 ```
 
